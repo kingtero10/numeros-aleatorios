@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Verificar si un carácter es número o texto</title>
+  </head>
+  <body>
+    <h1>YO SOY LA IMAGEN</h1>
+
+
+    <input type="text" id="input-texto" onkeyup="verificarCaracter()">
+    <p id="resultado"></p>
+    
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+            font-size: 200%;
+            margin-top: 20%;
+        }
+        h1{
+            font-size: 100%;
+            text-align: center;
+            margin-top: ;
+            
+        }
+
+        
+    </style>
+
+
+    
+    <script>
+      function verificarCaracter() {
+        const input = document.getElementById("input-texto");
+        const caracter = input.value;
+        let esNumero = !isNaN(caracter);
+        let mensaje = "";
+        if (esNumero) {
+          mensaje = "El carácter ingresado es un número";
+        } else {
+          mensaje = "El carácter ingresado es un texto";
+        }
+        document.getElementById("resultado").innerHTML = mensaje;
+      }
+    </script>
+    
+  </body>
+</html>

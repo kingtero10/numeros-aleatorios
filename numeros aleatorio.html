@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+            font-size: 200%;
+            margin-top: 20%;
+        }
+    
+
+        
+    </style>
+    
+<button class="boton" onclick="generateRamdomNumber()">Oprimir </button>
+<p class="letra" id="randomNumber"></p>
+
+    <script>
+        function generateRamdomNumber(){
+            var randomNumber= Math.floor(Math.random() * 100) +1;
+            document.getElementById("randomNumber").innerHTML= randomNumber;
+            
+        }
+    </script>
+
+</body>
+</html>
